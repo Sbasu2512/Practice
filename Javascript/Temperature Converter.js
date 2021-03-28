@@ -1,12 +1,10 @@
-//value assigned to kelvin
-var kelvin = 293 ;
-//converting it to celsius
-const celsius = 273 - kelvin ;
-//declaring, initializing and converting fahrenheit to celsius
-var fahrenheit = celsius*(9/5) + 32;
-//getting rid of decimal point
-fahrenheit = Math.floor(fahrenheit) ;
-console.log(`The temperature is ${fahrenheit} degrees Fahrenheit`);
+const prompt = require('prompt-sync')();
+var celsius = prompt('Please enter temperature in Celsius: ');
+var kelvin = celsius + 273.15 ;
+var fahrenheit = (celsius *9/5)+32;
 var newton = celsius*(33/100);
+fahrenheit = Math.floor(fahrenheit) ;
 newton = Math.floor(newton);
-console.log(`The temperature is ${newton} degrees Newton`);
+console.log(`The temperature is ${fahrenheit} degrees Fahrenheit` + '\n');
+console.log(`The temperature is ${kelvin} degrees kelvin` + '\n');
+console.log(`The temperature is ${newton} degrees Newton` + '\n');
