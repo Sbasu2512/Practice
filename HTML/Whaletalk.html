@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Whalle talk</title>
+</head>
+
+<body>
+    <input id="input" placeholder="Enter your phrase here">
+    <br>
+    <button id="btn1">Convert</button>
+    <br>
+    <p id = "output">This phrase converted to whale languague is: </p>
+    <script>
+        document.getElementById('btn1').onclick = function whaletalk() {
+            var input = document.getElementById('input').value;
+            var vowel = ['a', 'e', 'i', 'o', 'u'];
+            var resultArray = [];
+            for (let i = 0; i < input.length; i++) {
+                 //console.log(input[i]);
+                for (let j = 0; j < vowel.length; j++) {
+                     //console.log(vowel[j]);
+                    if (input[i] === vowel[j]) {
+                        resultArray = resultArray.push(input[i]);
+                        if (input[i] === 'e' || input[i] === 'u') {
+                            if (input[i] === 'e' || input[i] === 'u') {
+                                resultArray = resultArray.push(input[i]);
+                            }
+                        }
+
+                    }
+                }
+            }
+            console.log(resultArray);
+            let arr = resultArray.reduce((acc, cE) => {
+                return acc + cE;
+            })
+
+        }
+            resultArray = (arr.toUpperCase());
+            resultArray = document.getElementById("output").innerHTML;
+             document.getElementById("btn1").style.display = none;
+    </script>
+</body>
+
+</html>
