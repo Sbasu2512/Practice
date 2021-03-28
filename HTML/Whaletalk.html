@@ -11,9 +11,11 @@
     <br>
     <button id="btn1">Convert</button>
     <br>
-    <p> The whales speak it as: <p id='output'></p> </p>
+    <p> The whales speak it as:
+    <p id='output'></p>
+    </p>
     <script>
-        let elm = document.getElementById('output') ;
+        let elm = document.getElementById('output');
         let button1 = document.getElementById('btn1')
         button1.onclick = function whaletalk() {
             var input = document.getElementById('input').value;
@@ -21,9 +23,9 @@
             var resultArray = [];
             let arr;
             for (let i = 0; i < input.length; i++) {
-                 //console.log(input[i]);
+                //console.log(input[i]);
                 for (let j = 0; j < vowel.length; j++) {
-                     //console.log(vowel[j]);
+                    //console.log(vowel[j]);
                     if (input[i] === vowel[j]) {
                         resultArray.push(input[i]);
                         if (input[i] === 'e' || input[i] === 'u') {
@@ -33,7 +35,7 @@
                         }
 
                     }
-                    arr = resultArray.join('') ;
+                    arr = resultArray.join('');
                 }
             }
             //console.log(resultArray);
