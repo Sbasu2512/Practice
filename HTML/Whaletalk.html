@@ -11,9 +11,11 @@
     <br>
     <button id="btn1">Convert</button>
     <br>
-    <p>This phrase converted to whale languague is:<span id = "output"> </span> </p>
+    <p> The whales speak it as: <p id='output'></p> </p>
     <script>
-        document.getElementById('btn1').onclick = function whaletalk() {
+        let elm = document.getElementById('output') ;
+        let button1 = document.getElementById('btn1')
+        button1.onclick = function whaletalk() {
             var input = document.getElementById('input').value;
             var vowel = ['a', 'e', 'i', 'o', 'u'];
             var resultArray = [];
@@ -31,12 +33,12 @@
                         }
 
                     }
-                    arr = resultArray.join(',') ;
+                    arr = resultArray.join('') ;
                 }
             }
             //console.log(resultArray);
             arr = (arr.toUpperCase());
-         document.getElementById("output").innerHTML = arr;
+            elm.innerHTML = arr; //to display it on the browser
 
         }
     </script>
