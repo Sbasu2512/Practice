@@ -1,1 +1,6 @@
-console.log("Hello world from Node.js");
+let number ;
+const addTwo = () => {
+    let number = 4
+  }
+
+  console.log(number)
