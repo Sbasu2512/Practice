@@ -13,9 +13,10 @@ you can inverse the array and use indexOf. then subtract the value from the tota
 
 function lastIndexOf(array, value) 
 {
-  for(let i=array.length; i>=0; i--){
-    if(array[i] == value){
-      return i;
+  for(let i=array.length; i>=0; i--)  //iterating the array backwards
+  {
+    if(array[i] == value){      //looking for an element that matches the value
+      return i;                 //returning the said value
     }
   }
   return -1;
