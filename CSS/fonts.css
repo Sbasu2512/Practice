@@ -1,0 +1,39 @@
+.container {
+  width: 80%;
+  display: grid;  
+  margin: 0 auto;
+  grid-template-columns: 1fr 1fr;
+}
+
+.side {
+  display: grid;
+  grid-template-rows: 1fr 8fr;
+}
+
+h1 {
+  text-align: center;
+  align-self: center;
+  margin: 0;
+}
+
+.fonts {
+  display: grid;  
+  padding: 1em;
+  border-top: 1px solid;
+}
+
+.fonts-left {
+  grid-template-columns: 1fr;
+}
+
+.fonts-right {
+  grid-template-columns: 1fr 1fr 1fr;
+  border-left: 1px solid;
+}
+
+p {    
+  text-align: center;   
+  font-size: 1.25em;     
+  justify-self: center;
+  align-self: center;
+}
