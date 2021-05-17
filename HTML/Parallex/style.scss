@@ -1,0 +1,66 @@
+$parallax-height: 100vh;            //vh stands for view port height
+$center-margin: 0px auto;
+@mixin background-size($size){
+   background-size: $size;
+    -webkit-background-size: $size;
+    -moz-background-size: $size;
+    -o-background-size: $size;
+}
+@mixin parallax-background($file) {
+  /* background-image: url(path-to-file/img.jpg); background-repeat:no-repeat; background-position: center center; */
+  background: url($file) no-repeat center center fixed;  
+  @include background-size(cover);
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto;
+  color: #2e3738;
+}
+
+
+#landscape {
+  width: 100%;
+  height: 100vh;
+  perspective: 1px;
+  transform: translateZ(-1px);
+  overflow-x: hidden;
+  overflow-y: auto;
+  @include parallax-background("michael-olsen-Gs1mJmK2ixc-unsplash.jpg");
+}
+
+#monkeys {
+  width: 100%;
+  height: 100vh;
+  perspective: 1px;
+  transform: translateZ(-1px);
+  overflow-x: hidden;
+  overflow-y: auto;
+  @include parallax-background("zoltan-tasi-8Ce-NRKCq4s-unsplash.jpg");
+}
+
+#landscape,
+#monkeys {
+
+	h1{
+		text-transform: uppercase;
+	  	font-family: 'Bitter', serif;
+	  	letter-spacing: 0.06em;
+	  	font-size: 120px;
+	  	color: #FFF;
+	  	opacity: 0.7;
+	  	text-align: center;
+      transform: translateZ(-2px);
+	}
+}
+
+p {
+	width: 70%;
+	padding: 5%;
+	margin: 0px auto;
+	text-align: center;
+	font-size: 20px;
+	font-weight: 200;
+	line-height: 1.4;
+}
