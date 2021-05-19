@@ -11,10 +11,12 @@ body {
   height: 100vh;
   -webkit-perspective: 1px;
           perspective: 1px;
+  /*The perspective() CSS function defines a transformation that sets the distance between the user and the z=0 plane, the perspective from which the viewer would be if the 2-dimensional interface were 3-dimensional. */
   -webkit-transform: translateZ(-1px);
           transform: translateZ(-1px);
   overflow-x: hidden;
   overflow-y: auto;
+  /* background-image: url(path-to-file/img.jpg); background-repeat:no-repeat; background-position: center center; */
   background: url("michael-olsen-Gs1mJmK2ixc-unsplash.jpg") no-repeat center center fixed;
   background-size: cover;
   -webkit-background-size: cover;
@@ -31,6 +33,7 @@ body {
           transform: translateZ(-1px);
   overflow-x: hidden;
   overflow-y: auto;
+  /* background-image: url(path-to-file/img.jpg); background-repeat:no-repeat; background-position: center center; */
   background: url("zoltan-tasi-8Ce-NRKCq4s-unsplash.jpg") no-repeat center center fixed;
   background-size: cover;
   -webkit-background-size: cover;
@@ -44,7 +47,7 @@ body {
   font-family: 'Bitter', serif;
   letter-spacing: 0.06em;
   font-size: 120px;
-  color: #FFF;
+  color: #09080E;
   opacity: 0.7;
   text-align: center;
   -webkit-transform: translateZ(-2px);
@@ -52,12 +55,8 @@ body {
 }
 
 p {
-  width: 70%;
-  padding: 5%;
-  margin: 0px auto;
-  text-align: center;
+  text-align: right;
   font-size: 20px;
-  font-weight: 200;
   line-height: 1.4;
 }
 /*# sourceMappingURL=style.css.map */
