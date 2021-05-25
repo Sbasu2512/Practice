@@ -8,10 +8,22 @@ Lighthouse Prep Work fully has been added.
         * [fonts.css](CSS/fonts.css) - styling for fonts.html.
     * [HTML](HTML) 
         * [Parallex](HTML/Parallex) - Example of parallex website, contains the html & css.
-        * [fonts](HTML/fonts.html) - looking at how different fonts typography.
-        * [form](HTML/form.html) - looking at various examples of forms.
-        * [Hello World](HTML/'Hello World.html') - where all programming starts, via Hello World
+        * [Fonts](HTML/fonts.html) - looking at how different fonts typography.
+        * [Form](HTML/form.html) - looking at various examples of forms.
+        * [Hello World](HTML/'Hello World.html') - where all programming starts, via Hello World.
         * [Whaletalk](HTML/Whaletalk.html) - Website for whaletalk project off of Codecademy. 
-    * Java
-    * Javascript
-    * Lighthouse Prep Questions
+    * [Java](Java)
+        * [Mavenprojects](Java/Mavenprojects)
+        * [SeleniumScripts](Java/SeleniumScripts)
+        * [Array](Java/array.java)  - Multiplication of two arrays.
+        * [Arraysforloop](Java/arraysforloop.java)    - for loop example.
+        * [Calculator](Java/calculator.java)          - java calculator program.
+        * [Conditionalexercise](Java/conditionalexercise.java)  - if statement example.
+        * [Encoder](Java/encoder.java)       - program to encode a string.
+        * [Mathmagic](Java/mathmagic.java)  - a loopy math program.
+        * [Store](Java/store.java)          - 
+        * [Switchstatement](Java/switchstatement.java)
+        * [Twitter](Java/Twitter.java)
+        * [Variables](Java/variables.java)
+    * [Javascript](Javascript)
+    * [Lighthouse Prep Questions]('Lighthouse Prep Questions')
