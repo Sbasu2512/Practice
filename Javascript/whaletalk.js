@@ -10,13 +10,13 @@ for(let i=0; i<input.length; i++){
    for(let j=0; j<vowel.length; j++){
    // console.log(vowel[j]);
    if(input[i] === vowel[j]){
-     resultArray.push(input[i]);
+     //resultArray.push(input[i]);
      if(input[i] === 'e' || input[i] === 'u'){
        if(input[i] === 'e' || input[i] === 'u'){
          resultArray.push(input[i]);
        }
      }
-     
+     resultArray.push(input[i]);
    }
    }
 }
